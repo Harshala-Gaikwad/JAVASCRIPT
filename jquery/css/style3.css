@@ -1,0 +1,17 @@
+.mydivs{
+	border:2px solid blue;
+	margin:5px;
+	padding: 10px;
+}
+div p{
+	color:red;
+}
+.newdivclass{
+	border-radius: 10px;
+	background-color: aqua;
+}
+
+.newparaclass{
+	font-weight: bold;
+	color: browm;
+}

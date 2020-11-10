@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Events in Jquery</title>
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
+	</head>
+	<body>
+      
+      <h2>Events in Jquery</h2>
+      <p>This para is outside division</p>
+
+      <div id="firstdiv" class="mydivs">
+        <p>This is first Para in first division</p>
+        <p>This is second Para in first division</p>
+      </div>
+      <div id="seconddiv" class="mydivs">
+        <p>This is third Para in second division</p>
+      </div>
+      <div id="thirddiv" class="mydivs">
+        <ul>
+          <li>List item1</li>
+          <li>List item2</li>
+          <li>List item3</li>
+          <li>List item4</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>List item1</li>
+          <li>List item2</li>
+          <li>List item3</li>
+          <li>List item4</li>
+        </ul>
+      </div>
+
+      <button id="btn">Click me</button>
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+  $(document).ready(function(){    //execute when web page is loaded
+    /*
+    $("button").click(function(){
+
+    })*/
+    $("button").click(fn1);
+    function fn1(){
+      $("#firstdiv").fadeToggle(1000);
+    }
+  })
+  
+	</script>
+</html>

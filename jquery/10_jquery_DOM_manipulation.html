@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Jquery - DOM manipulation</title>
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
+	</head>
+	<body>
+      <!--text(),html(),attr(),css()-->
+      <h2>Jquery - DOM manipulation</h2>
+
+      <button id="btn3">Action</button>
+
+      <div id="div1" class="mydivs">
+        <p id="p1" class="p1class" value="Hello World">This is first <i>Para</i></p>
+        <p>This is second Para</p>
+      </div>
+      
+
+	</body>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script>
+  $(document).ready(function(){
+    $("#btn3").click(function(){
+      //alert($("#p1").text());
+      //var txt = $("#p1").text();
+      //alert(txt);
+      //$("#p1").text("Hello world"); //with argu-setter method wiithout argu getter method
+      //alert($("#p1").html());
+      //$("#p1").html("This is first <i>Para</i>");
+      //$("#p1").text("This is first <i>Para</i>");
+      //alert($("#p1").attr("value"));
+      //alert($("#p1").attr("class"));
+      //alert($("#p1").css("font-size"));   border,color,font-family
+    })
+  })
+  
+	</script>
+</html>

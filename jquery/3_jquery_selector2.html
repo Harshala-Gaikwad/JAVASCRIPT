@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>jQuery Selectors</title>
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
+	</head>
+	<body>
+      
+      <h2>Selectors up jquery</h2>
+      <p>This para is outside division</p>
+      <div id="firstdiv" class="mydivs">
+        <p>This is first Para in first division</p>
+        <p>This is second Para in first division</p>
+      </div>
+      <div id="seconddiv" class="mydivs">
+        <p>This is third Para in second division</p>
+      </div>
+      <div id="thirddiv" class="mydivs">
+        <ul>
+          <li>List item1</li>
+          <li>List item2</li>
+          <li>List item3</li>
+          <li>List item4</li>
+        </ul>
+      </div>
+
+      <button onclick="fn1()" id="btn">Click me</button>
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		function fn1(){
+      //$("#firstdiv,#seconddiv").fadeToggle();
+			//$("#firstdiv,p").fadeToggle();
+      //$("#firstdiv,p,li").fadeToggle(1000);
+      //$("div>p").fadeToggle(1000); //or (div p)
+      //$("p:first").fadeToggle(1000);
+      //$(".mydivs:first").fadeToggle(1000);
+      //$(".mydivs:even").fadeToggle(1000);
+      $(".mydivs:odd").fadeToggle(1000);
+		}
+	</script>
+</html>

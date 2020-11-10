@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Events in Jquery</title>
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
+	</head>
+	<body>
+      
+      <h2>Events in Jquery</h2>
+      <p>This para is outside division</p>
+
+      <button id="btn1">Click me1</button>
+      <button id="btn2">Click me2</button>
+      <button id="btn3">Toggle</button>
+
+      <div id="firstdiv" class="mydivs">
+        <p>This is first Para in first division</p>
+        <p>This is second Para in first division</p>
+      </div>
+      <div id="seconddiv" class="mydivs">
+        <p>This is third Para in second division</p>
+      </div>
+      <div id="thirddiv" class="mydivs">
+        <ul>
+          <li>List item1</li>
+          <li>List item2</li>
+          <li>List item3</li>
+          <li>List item4</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>List item1</li>
+          <li>List item2</li>
+          <li>List item3</li>
+          <li>List item4</li>
+        </ul>
+      </div>
+
+      
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+  $(document).ready(function(){    
+    $("#btn1").click(function(){
+      //$("#firstdiv").hide();
+      //$("#firstdiv").fadeOut("slow");
+      $("#firstdiv").slideUp();
+    }) 
+    $("#btn2").click(function(){
+      //$("#firstdiv").show();
+      //$("#firstdiv").fadeIn(1000);
+      $("#firstdiv").slideDown();
+    })
+    $("#btn3").click(function(){
+      //$("#firstdiv").toggle();
+      //$("#firstdiv").fadeToggle();
+      $("#firstdiv").slideToggle();
+    })
+   
+  })
+  
+	</script>
+</html>

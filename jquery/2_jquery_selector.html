@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>jQuery Selectors</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+      <h2 class="myheading" id="firstH2">Selectors up jquery</h2>
+      <h2 class="myheading">Selectors up jquery</h2>
+      <h2>Selectors up jquery</h2>
+
+      <button onclick="fn1()" id="btn">Click me</button>
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		function fn1(){
+			//document.getElementById() = $("#heading1").action();
+			//$("h2").fadeToggle();
+			//$("#firstH2").fadeToggle();
+			$(".myheading").fadeToggle();
+		}
+	</script>
+</html>
