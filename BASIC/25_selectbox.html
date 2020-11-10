@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Introduction to Objects</title>
+		<script type="text/javascript">
+			/*DOM Manipulation & getelementbyId method*/
+			function fn1(){
+				var s1=document.getElementById("selectbox");
+				alert(s1.options[s1.selectedIndex].value)
+				
+			}
+
+		</script>
+	</head>
+	<body>
+		<select id="selectbox">
+			<option value="SS">Simple Snippet</option>
+			<option value="Tl">Telusko Learning</option>
+			<option value="MKBHD">MKBHD</option>
+		</select><br><br>
+		<button onclick="fn1()">Click me</button>
+
+	</body>
+</html>

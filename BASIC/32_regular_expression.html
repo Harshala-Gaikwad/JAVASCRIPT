@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Regular Expression</title>
+		<script type="text/javascript">
+			/*Used to perform powerful pattern-matching and search-and-replace functions on text*/
+			function validate(){
+				var username = document.getElementById("uname").value;
+				var regx = /E00/i;      //literal way (i is optional for case sensitivity)
+				if (regx.test(username)) {     //test return boolean value
+					alert("valid Username");
+				}
+				else{
+					alert("invalid username");
+					document.getElementById("lbluser").style.visibility="visible";
+				}
+				
+			}
+			
+
+		</script>
+	</head>
+	<body>
+		<form action="30_msg.html">
+			<input id="uname" placeholder="Username" type="text"/>
+			<label id="lbluser" style="color:red;visibility:hidden;">Invalid</label>
+			<br><br>
+			
+
+			<button onclick="validate()" type="button">Submit</button>
+		</form>
+		
+
+
+
+	</body>
+</html>

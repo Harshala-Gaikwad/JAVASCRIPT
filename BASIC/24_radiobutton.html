@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Introduction to Objects</title>
+		<script type="text/javascript">
+			/*DOM Manipulation & getelementbyId method*/
+			function fn1(){
+				var rd1=document.getElementById("rd1");
+				var rd2=document.getElementById("rd2");
+				if(rd1.checked==true)
+					alert("The channel selected id: "+rd1.value);
+				else if(rd2.checked==true)
+					alert("The channel selected id: "+rd2.value);
+				else
+					alert("No channel selected");
+				
+			}
+
+		</script>
+	</head>
+	<body>
+		<input id="rd1" name="grp1" type="radio" value="Simple Snippets">Simple Snippets</input><br><br>
+		<input id="rd2" name="grp1" type="radio" value="Telusko Learning">Telusko Learning</input>
+		<br><br>
+
+		<button id="btn1" onclick="fn1()">Click me</button>
+	</body>
+</html>

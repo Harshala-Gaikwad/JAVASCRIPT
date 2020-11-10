@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Introduction to Objects</title>
+		<script type="text/javascript">
+			/*DOM Manipulation & getelementbyId method*/
+			//getElementById: particular tag
+			//getElementBytagName: multiple tag
+			function fn1(){
+				var para=document.getElementsByTagName("p"); //gives list of p tag
+				para[0].style.fontSize=25;
+				
+				
+			}
+
+		</script>
+	</head>
+	<body>
+		<p>This is para</p>
+		<p>This is para</p>
+		<p>This is para</p>
+		<p>This is para</p>
+		<p>This is para</p>
+		<br>
+		<button onclick="fn1()">Click me</button>
+
+	</body>
+</html>

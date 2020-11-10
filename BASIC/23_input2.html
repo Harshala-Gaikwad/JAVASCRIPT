@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Introduction to Objects</title>
+		<script type="text/javascript">
+			/*DOM Manipulation & getelementbyId method*/
+			function fn1(){
+				var str1 = document.getElementById("text1").value;
+				var str2= document.getElementById("text2").value;
+				//alert(str1+" "+str2);
+				
+				if(str1==str2){
+					alert("Username and password is same.");
+				}
+				else{
+					alert("Username and password are not same.");
+				}
+				
+			}
+
+		</script>
+	</head>
+	<body>
+		<input id="text1" placeholder="Username">
+		<br><br>
+		<input id="text2" placeholder="Password" type="password">
+		<br>
+
+		<button id="btn1" onclick="fn1()">Click me</button>
+	</body>
+</html>

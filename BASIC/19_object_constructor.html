@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Introduction to Objects</title>
+		<script type="text/javascript">
+
+			
+			document.write("<h1>Objects Constructor </h1>");
+
+			//constructor function: Used to create multiple objects of car type
+			function Cars(car_brand,car_model,price){
+				this.car_brand="Tesla",
+				this.car_model="Model",
+				this.price=35000,
+
+				this.testAutoPilot = function(){
+					document.write("<h2>This car has auto pilot</h2>")
+				}
+			}
+			
+			//document.write("<h2>"+Car.car_brand+"</h2>")
+			var c1 = new Cars("Tesla","Model 3",35000);
+			var c2 = new Cars("Tesla","Model 4",435000);
+			c1.testAutoPilot();
+			document.write("<h2>"+c1.car_brand+"</h2>")
+			
+
+		</script>
+	</head>
+
+	<body>
+    
+	</body>
+<html>

@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Dubugging</title>
+		<script type="text/javascript">
+			
+			function addValues(){
+
+				var a = document.getElementById("t1").value;
+				var b = document.getElementById("t2").value;
+				document.getElementById("op").innerHTML="Result = "+(a+b);
+				console.log(a+b);
+				
+			}
+			
+
+		</script>
+	</head>
+	<body>
+		<form>
+			<input id="t1" placeholder="Text 1" type="text"/>
+			<br><br>
+			<input id="t2" placeholder="Text 2" type="text"/>
+			<br><br>
+
+			<button onclick="addValues()" id="btnAdd" type="button">Add</button>
+			<h2 id ="op">Result = </h2>
+			
+		</form>
+		
+
+
+
+	</body>
+</html>

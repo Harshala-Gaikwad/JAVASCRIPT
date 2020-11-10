@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Introduction to Objects</title>
+		<script type="text/javascript">
+
+			
+			document.write("<h1>Objects Constructor </h1>");
+			/*
+			   Boolean can be objects(if defined with the new keyword)
+			   Number can be objects(if defined with the new keyword)
+			   Strings can be objects(if defined with the new keyword)
+			   Dates are always objects
+			   Maths are always objects
+			   Regular Expression are always objects
+			*/
+			var str1 = new String();
+			document.write("<h2>"+typeof(str1)+"</h2>");
+
+			var str2 = "str";
+			document.write("<h2>"+typeof(str2)+"</h2>");
+
+			var Car = {
+
+				car_brand:"Tesla",
+				car_model:"Model",
+				price:35000,
+
+				testAutoPilot : function(){
+					document.write("<h2>This car has auto pilot</h2>")
+				}
+			}
+			//100 lines of codes
+
+			Car.fuelType = "Electric"; //It will add one more property to Car object
+			document.write("<h2>"+Car.fuelType+"</h2>")
+
+			delete Car.price; //delete certain property from objects
+			Car.price = "45000"; //change value and type
+
+			
+
+		</script>
+	</head>
+
+	<body>
+    
+	</body>
+<html>
