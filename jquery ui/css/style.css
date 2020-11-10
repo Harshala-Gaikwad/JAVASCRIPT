@@ -1,0 +1,24 @@
+#mydiv{
+	border: 2px solid rebeccapurple;
+	padding: 10px;
+}
+#firstdiv{
+	border: 2px solid rebeccapurple;
+	padding: 10px;
+}
+#messagebox{
+	border: 2px solid rebeccapurple;
+	padding: 10px;	
+}
+#mydivs{
+	border: 2px solid rebeccapurple;
+	padding: 10px;
+}
+.cube{
+	background: aqua;
+	height:100px;
+	width: 100px;
+	padding: 20px;
+	margin: 20px;
+	display: inline-block;
+}

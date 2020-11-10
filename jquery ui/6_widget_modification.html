@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Widget Modification in JQuery UI</title>
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+	</head>
+	<body>
+      <h2>Widget Modification in JQuery UI</h2>
+      <button id="actionbtn">CHANGE</button>
+      <br><br>
+      <div id="dateinput" title="My Calendar"></div>
+
+    
+      <div id="panels">
+        <h3>JavaScript</h3>
+        <p>JavaScript is a client side scripting language</p>
+
+        <h3>Html</h3>
+        <p>Html is a client side hypertext markup language</p>
+
+        <h3>CSS</h3>
+        <p>CSS is a cascading style sheet language</p>
+      </div>
+       <br> 
+      <div id="messagebox" title="Messagebox">
+         <h3>This is just dummy title</h3>
+         <img src="insta.jpg" width="100px" title="Insta" id="myimg">
+      </div>
+
+	</body>
+	<script src="js/jquery.js" type="text/javascript"></script>
+  <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+	<script>
+    $("#dateinput").datepicker({
+      numberOfMonths: 1,
+      changeYear:true,
+      changeMonth:true,
+      showweek:true,
+      weekHeader:"wk no",
+      showOtherMonths:true,
+      minDate: new Date(2017,0,1),
+      maxDate: new Date(2020,0,1)
+     }); 
+
+    $("#panels").accordion({
+      collapsible:true,
+      event:"click",   //mouseover
+      animate: 300,
+      active:0,
+      heightStyle:true,
+      icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+     });
+
+
+      $("#messagebox").dialog({
+        title:"Custom messagebox",
+        draggable:true,
+        resizable:true,
+        height:300,
+        width:300,
+        model:true,
+
+        buttons:[{
+          text:"Close",
+          icon:"ui-icon-heart",
+          click:function(){
+            $(this).dialog("close");
+          }
+        },
+        {
+          text:"Ok",
+          icon:"ui-icon-heart",
+          click: function(){
+            $(this).dialog("close");
+          }
+        }]
+      });
+
+      $("#actionbtn").click(function(){
+        //getter method
+        //var height = $( "#messagebox" ).dialog( "option", "height" );
+        //alert(height);
+        //setter
+        //$( "#messagebox" ).dialog( "option", "height", 400 );
+        $( "#messagebox" ).dialog( "option", "draggable", false );
+        
+      })
+     
+       
+	</script>
+</html>
